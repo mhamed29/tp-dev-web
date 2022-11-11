@@ -1,0 +1,10 @@
+body {
+   background-color:red;
+}
+p {color: blue;
+font-family: 'Times New Roman', Times, serif;
+text-align: left;}
+h1 {
+    color: green;
+    font-size: large;
+}

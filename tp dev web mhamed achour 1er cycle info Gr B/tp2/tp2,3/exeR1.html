@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>formulaire</title>
+<style>
+    form {background-color: #cce7ff;
+    padding: 10px;
+    width: 350px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    fieldset {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    legend {
+        color: #a0522d;
+        font-weight: bold;
+    }
+    label {
+        margin: 20px;
+        font-size: 90%;
+    }
+    input {
+        background-color: #a6bede;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+        border: 1px solid black;
+    }
+    select, option {
+        background-color: #A6BEDE;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;    
+    }
+    textarea {
+        border: 1px solid black;
+        background-color: #A6BEDE;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+    }
+</style>
+</head>
+
+<body>
+<form name="form1"  action="">
+  <fieldset >
+    <legend>A propos des CSS :</legend>
+    <label>Savez-vous ce que veut dire CSS ?</label>
+    <p>oui 
+      <input name="radiobutton" type="radio" value="radiobutton" checked>
+      non <input type="radio" name="radiobutton" value="radiobutton"> 
+    </p>
+    <label>Si oui, les utilisez-vous plutôt :</label><br>
+      <select name="select" size="1">
+        <option value="toujours">toujours</option>
+        <option value="parfois">parfois</option>
+        <option value="jamais">jamais</option>
+      </select>
+    </fieldset>
+  <fieldset>
+    <legend>vos coordonnées :</legend>
+    <p><label>Votre Email :</label><br>
+      <input type="text" name="textfield"> 
+    <br>
+    <label>Vos Commentaires:</label><br>
+      <textarea name="textarea" cols="30"></textarea> 
+    </p>
+  
+  <p>
+    <input type="submit" name="Submit" value="Envoyer"> 
+    <input type="reset" name="Submit" value="Annuler"> 
+  </p></fieldset>
+</form>
+</body>
+</html>

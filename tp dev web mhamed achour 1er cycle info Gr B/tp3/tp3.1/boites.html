@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boites</title>
+    <style>
+        .conteneur {
+            position: relative;
+            width: 750px;
+            margin: auto;
+            background-color: #cefdfd;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+        }
+        .g, .d {
+            margin-left: 20px;
+            margin-top: 2px;
+        }
+        header{
+            height: 100px;
+            background-color: #fdc8fd;
+        }
+        .g {
+            position: absolute;
+            margin-left: 0px!important;
+            width: 150px;
+            height: 350px;
+        }
+        .m {
+            background-color: #DDDDEE;
+            margin-left: 150px;
+            margin-right: 150px;
+            height: 350px;
+        }
+        .d{
+            position: absolute;
+            margin-left: 600px!important;
+            width: 150px;
+            height: 350px;
+        }
+        footer {
+            height: 70px;
+            background-color: #f5afd8;
+        }
+        
+        li { margin-top: 5px;}
+        a:link{
+            color: #006600;
+            text-decoration: underline;
+        }
+        a:visited{
+            color: red;
+            text-decoration: none; /*vous n'avez pas preciser pour la declaration alors j'ai conclu que c'etait none */
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        ul>li {
+            list-style-type: disc;
+        }
+    </style>
+
+
+<!-- la section de droite n'est pas où elle devrait etre et normalement si ca ne marche pas avec la marge j'utilise 
+les flexbox ou le grid pour arranger ça mais comme ce n'est pas demander dans l'exercice (on nous a demander de suivre uniquement les propriétés ecrites) je vais le laisser comme ça -->
+</head>
+<body>
+    <div class="conteneur">
+        <header>
+            <p>Ceci est une entête de : 
+                <ol type="1">
+                    <li>
+                        hauteur:100px;
+                    </li>
+                    <li>
+                        couleur d'arrière plan:#FDC8FD;
+                    </li>
+                </ol>
+            </p>
+        </header>
+        <section class="g">
+            <p>gauche
+                <ol>
+                    <li>position:
+                        absolue;
+                    </li>
+                    <li>marge gauche:
+                        0px;
+                    </li>
+                    <li>largeur: 150 px;</li>
+                    <li>hauteur: 350 px;
+                        <ul>
+                            <li><a href="#">TP 1</a></li>
+                            <li><a href="#">TP 2</a></li>
+                            <li><a href="#">TP 3</a></li>
+                            <li><a href="#">TP 4</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </p>
+        </section>
+        <section class="m">
+            <p>Centre
+                <ol>
+                    <li>couleur d'arrière plan: #DDDDEE</li>
+                    <li>marge gauche: 150 px;</li>
+                    <li>marge droite: 150 px;</li>
+                    <li>hauteur:350px;</li>
+                </ol>
+            </p>
+        </section>
+        <section class="d">
+            <p>droite
+                <ol>
+                    <li>position:
+                        absolue;
+                    </li>
+                    <li>marge gauche:
+                        600px;
+                    </li>
+                    <li>largeur: 150 px;</li>
+                    <li>hauteur: 350 px;
+                        <ul>
+                            <li><a href="#">Corrigé 1</a></li>
+                            <li><a href="#">Corrigé 2</a></li>
+                            <li><a href="#">Corrigé 3</a></li>
+                            <li><a href="#">Corrigé 4</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </p>
+        </section>
+        <footer>
+            <p>pied de page
+                <ol>
+                    <li>hauteur: 70px;</li>
+                    <li>couleur d'arrière plan: #F5AFD8</li>
+                </ol>
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
